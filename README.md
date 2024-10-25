@@ -13,40 +13,6 @@ The documentation and the specification about the project can be found at the fo
 
 - [Documentatation and specification](https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/23-24/04/docs)
   
-## Diagram of branches
-```mermaid
-%%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true}} }%%
-gitGraph
-   commit id:"c0"
-   commit id:"c1"
-   branch dev
-   checkout dev
-   commit id:"c2"
-   branch username.featureName
-   commit tag:"Adding a new feature" id:"c3"
-   checkout dev
-   branch dev_backup
-   checkout username.featureName
-   commit id:"c4"
-   checkout dev
-   merge username.featureName tag:"Merge request required"
-   checkout main
-   merge dev tag:"version 1"
-   checkout dev
-   commit id:"c5"
-   branch username.bugBugName
-   commit tag:"Fixing bug" id:"c6"
-   commit id:"c7"
-   checkout dev
-   merge username.bugBugName tag:"Merge request required"
-   commit id:"c8"
-   checkout dev_backup
-   merge dev
-   checkout main
-   merge dev tag:"version 2"
-   commit id:"c9"
-   
-```
 ## Support
 - Subject : https://air.imag.fr/index.php/Open_World_Lego_avec_Godot_et_LDraw
 
